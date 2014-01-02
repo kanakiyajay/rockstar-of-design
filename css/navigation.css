@@ -14,9 +14,12 @@
 .subnav li:hover a{
 	color: black;
 	font-size: 0.95em;
+	padding-left: 2px;
+	border-left: 2px solid orange;
 }
 
 .subnav a{
+	transition : 0.3s all;
 	font-family: 'Oswald', sans-serif;
 	color: rgb(107,108,109);
 	font-size: 0.9em;
