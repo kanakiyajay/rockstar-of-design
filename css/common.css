@@ -1,4 +1,4 @@
 /* Common Styles */
-img{
-	max-width: 100%;
+.container-fluid{
+	padding: 0 15px;
 }
