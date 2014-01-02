@@ -1,5 +1,6 @@
 #wrapper-navigation{
 	margin-top: 1.2em;
+	margin-bottom: 0.5em;
 }
 
 .subnav{
@@ -8,6 +9,11 @@
 
 .subnav li{
 	margin-top: 5px;
+}
+
+.subnav li:hover a{
+	color: black;
+	font-size: 0.95em;
 }
 
 .subnav a{
