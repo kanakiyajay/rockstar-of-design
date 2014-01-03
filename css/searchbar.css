@@ -30,6 +30,12 @@
 	outline: none;
 }
 
+#searchBtn{
+	margin-left: -45px;
+	background-color: white;
+	border:0;
+}
+
 #main-searchbar:focus{
 	outline: none;
 }

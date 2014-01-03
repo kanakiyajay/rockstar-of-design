@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="rockstar">
 
 <head>
     <!--
-	** BigRock App
+	** Rockstar of Design App
 	** Licensed under the Apache License v2.0
 	** http://www.apache.org/licenses/LICENSE-2.0
 	** Built by Jay Kanakiya ( @techiejayk )
@@ -35,7 +35,7 @@
 				<![endif]-->
 </head>
 
-<body>
+<body ng-controller="RckCtrl">
     <div class="container-fluid">
         <div class="row" id="wrapper-navigation">
             <div class="col-lg-1"></div>
@@ -43,6 +43,15 @@
                 <img class="img-responsive" src="img/BR-logo-color.png" alt="BigRock Logo">
             </div>
             <div class="col-lg-2 col-lg-offset-2">
+            		<ul class="subnav">
+            			<li><a href="#">Get a Domain</a></li>
+            			<li><a href="#">Get Hosting</a></li>
+            			<li><a href="#">Get a VPS</a></li>
+            			<li><a href="#">Build a Website</a></li>
+            			<li><a href="#">Partner with Us</a></li>
+            		</ul>
+            </div>
+            <div class="col-lg-2">
                 <ul class="subnav">
                     <li><a href="#">Call us 1-800-200-7625</a>
                     </li>
@@ -62,7 +71,7 @@
             </div>
             <div class="col-lg-2">
                 <ul class="subnav">
-                    <li><a href="#">Cart</a>
+                    <li><a href="#">Cart <span class="badge" ng-show="cartDomains.length">{{cartDomains.length}}</span></a>
                     </li>
                     <li><a href="#">Checkout</a>
                     </li>
@@ -74,10 +83,22 @@
                 <h2 id="typo">Get Your Domain Here</h2>
             </div>
             <div class="clearfix"></div>
-            <div class="col-xs-3"></div>
-            <div class="col-xs-9">
+            <div class="col-lg-3 col-xs-1"></div>
+            <div class="col-lg-9 col-xs-12">
                 <span class="triangle-left"></span>
-                <input type="text" id="main-searchbar" placeholder="Type your New Domain ..." autofocus="true">
+                <input ng-model="searchText" type="text" id="main-searchbar" placeholder="Type your New Domain ..." autofocus="true">
+                <span id="searchBtn" ng-show="searchText.length" ng-click="search()" class="btn btn-default"><i class="glyphicon glyphicon-search"></i> </span>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-lg-3"></div>
+            <!-- Cart Mechanism -->
+				<div class="col-lg-6" id="availableDomains" ng-show="availableDomains.length">
+					<ul class="unstyled domains">
+						<li ng-repeat="domain in availableDomains">
+							<h3>{{domain}}</h3>
+							<button class="btn btn-default" ng-click="addToCart($index)">Add to Cart</button>
+						</li>
+					</ul>
             </div>
         </div>
         <div class="row" id="wrapper-pricelist">
@@ -146,9 +167,9 @@
 						</div>
 					</div>
 					<div class="row quote">
-					<blockquote>
-					  I purchased couple of domains and a DIY package from BigRock and it was the best decision I could have ever made. With BigRock's help I was able to customize my business website, having absolutely zero knowledge of programming or designing. Thank you Bigrock!
-					</blockquote>
+						<blockquote>
+						  I purchased couple of domains and a DIY package from BigRock and it was the best decision I could have ever made. With BigRock's help I was able to customize my business website, having absolutely zero knowledge of programming or designing. Thank you Bigrock!
+						</blockquote>
 					</div>
             </div>
         </div>
@@ -345,6 +366,7 @@
 	</script>-->
     <script src="js/libs/jquery.min.js"></script>
     <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/libs/angular.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 
