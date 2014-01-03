@@ -1,0 +1,24 @@
+#wrapper-companies{
+	margin: 3em 0;
+}
+
+.brand-typo h3,.brand-typo p{
+	font-family: 'Oswald', sans-serif;
+}
+
+.brand-typo h3{
+	margin-top: 0.1em;
+}
+
+.brand-typo img{
+	margin-top: 2em;
+}
+
+.testimonial h3{
+	font-family: 'Oswald', sans-serif;
+}
+
+.quote{
+	margin-left: 20px;
+	padding-top: 20px;
+}

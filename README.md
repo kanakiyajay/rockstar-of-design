@@ -1,3 +1,6 @@
+*Responsive
+*Uses Bootstrap 3.
+*Follows Conventions.
 *Follows Minimalism everywhere.
 *All the css files are seperated.
 *Css3 transitions are used for animations.

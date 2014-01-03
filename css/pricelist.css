@@ -1,6 +1,6 @@
 #wrapper-pricelist{
 	padding-top: 2.5em;
-	background-color: rgb(245,134,52);
+	background: linear-gradient(135deg, rgb(204, 89, 0) 33%,rgb(247, 117, 14) 30%,rgb(214, 94, 0) 70%,rgb(187, 93, 19) 100%);
 }
 
 .prices{

@@ -1,5 +1,5 @@
 #wrapper-search{
-	background-color: rgb(245,134,52);
+	background: linear-gradient(135deg, rgb(204, 89, 0) 0%,rgb(247, 117, 14) 50%,rgb(214, 94, 0) 50%,rgb(187, 93, 19) 100%);
 	padding-top: 1em;
 	padding-bottom: 3.5em;
 }
@@ -17,7 +17,7 @@
 	color: white;
 	text-align: center;
 	font-size: 3.5em;
-	margin-bottom: 2em;
+	margin-bottom: 1.5em;
 	margin-top: 1em;
 }
 
