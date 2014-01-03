@@ -1,5 +1,5 @@
 #footer-wrapper {
-    background:url(http://assets.bigrock.in/getImage.php?src=hompage-footer-gradient.jpg) repeat-x scroll 0 0 #d6d6d6;
+    background:#d6d6d6;
     position:relative
 }
 
@@ -44,7 +44,7 @@
     text-decoration:none
 }
 #footer-wrapper li {
-    background:url(http://assets.bigrock.in/getImage.php?src=footer-sprite.jpg) no-repeat scroll -70px -223px #d6d6d6;
+    background:url(images/footer-sprite.png) no-repeat scroll -70px -223px #d6d6d6;
     color:#848484;
     display:block;
     padding-left:10px;
@@ -57,12 +57,7 @@
 #footer .section-1 .wide-left-column .lower-block {
     position:relative
 }
-#footer .section-1 .wide-left-column .phone, #footer .section-1 .wide-left-column .help {
-    width:190px;
-    position:absolute;
-    top:0;
-    left:0
-}
+
 #footer .products {
     overflow:hidden;
     margin-bottom:30px
@@ -75,7 +70,7 @@
     right:0
 }
 #footer .section-1 .wide-left-column .upper-block .phone p.toll-free {
-    background:url(http://assets.bigrock.in/getImage.php?src=footer-sprite.jpg) no-repeat scroll 0 0 #d6d6d6;
+    background:url(images/footer-sprite.png) no-repeat scroll 0 0 #d6d6d6;
     height:35px;
     margin:0;
     overflow:hidden;
@@ -84,14 +79,14 @@
     width:265px
 }
 .US #footer .section-1 .wide-left-column .upper-block .phone p.toll-free {
-    background:url(http://assets.bigrock.in/getImage.php?src=footer-sprite.jpg) no-repeat scroll 0 -260px #d6d6d6;
+    background:url(images/footer-sprite.png) no-repeat scroll 0 -260px #d6d6d6;
     height:70px
 }
 .US #footer .section-1 .wide-left-column .upper-block .phone p.regular-number {
     display:none
 }
 #footer .section-1 .wide-left-column .upper-block .phone p.regular-number {
-    background:url(http://assets.bigrock.in/getImage.php?src=footer-sprite.jpg) no-repeat scroll 0 -30px #d6d6d6;
+    background:url(images/footer-sprite.png) no-repeat scroll 0 -30px #d6d6d6;
     height:25px;
     overflow:hidden;
     padding-top:0;
@@ -100,7 +95,7 @@
     margin:0
 }
 #footer .section-1 .wide-left-column .upper-block .media {
-    background:url(http://assets.bigrock.in/getImage.php?src=footer-sprite.jpg) no-repeat scroll 0px -63px #d6d6d6;
+    background:url(images/footer-sprite.png) no-repeat scroll 0px -63px #d6d6d6;
     height:55px;
     overflow:hidden
 }
@@ -128,7 +123,7 @@
     margin:26px 0 0 70px
 }
 #footer .section-1 .wide-left-column .help .t-need-help {
-    background:url(http://assets.bigrock.in/getImage.php?src=footer-sprite.jpg) no-repeat scroll -275px 3px #d6d6d6;
+    background:url(images/footer-sprite.png) no-repeat scroll -275px 3px #d6d6d6;
     color:#848484;
     height:31px;
     overflow:hidden;
@@ -136,7 +131,7 @@
     width:250px
 }
 #footer .section-1 .wide-left-column .awards .t-our-awards {
-    background:url(http://assets.bigrock.in/getImage.php?src=footer-sprite.jpg) no-repeat scroll -275px -56px #d6d6d6;
+    background:url(images/footer-sprite.png) no-repeat scroll -275px -56px #d6d6d6;
     color:#848484;
     height:31px;
     overflow:hidden;
@@ -147,7 +142,7 @@
     margin-top:5px
 }
 #footer .products .t-our-products {
-    background:url(http://assets.bigrock.in/getImage.php?src=footer-sprite.jpg) no-repeat scroll -274px -31px #d6d6d6;
+    background:url(images/footer-sprite.png) no-repeat scroll -274px -31px #d6d6d6;
     height:31px;
     overflow:hidden;
     padding-top:0;
@@ -156,7 +151,7 @@
     color:#848484
 }
 #footer .narrow-right-column .payment .t-payment-method {
-    background:url(http://assets.bigrock.in/getImage.php?src=footer-sprite.jpg) no-repeat scroll 0 -110px #d6d6d6;
+    background:url(images/footer-sprite.png) no-repeat scroll 0 -110px #d6d6d6;
     color:#848484;
     height:31px;
     overflow:hidden;
@@ -165,7 +160,7 @@
     width:348px
 }
 #footer .narrow-right-column .icann .t-bigrock-is-icann {
-    background:url(http://assets.bigrock.in/getImage.php?src=footer-sprite.jpg) no-repeat scroll -64px -194px #d6d6d6;
+    background:url(images/footer-sprite.png) no-repeat scroll -64px -194px #d6d6d6;
     padding:7px 0 6px 15px;
     color:#848484;
     height:25px;
@@ -187,7 +182,7 @@
     font-weight:bold
 }
 #footer .narrow-right-column .icann {
-    background:url(http://assets.bigrock.in/getImage.php?src=footer-sprite.jpg) no-repeat scroll 0 -195px #d6d6d6
+    background:url(images/footer-sprite.png) no-repeat scroll 0 -195px #d6d6d6
 }
 #footer .narrow-right-column .icann p {
     margin:0 0 0 60px;
@@ -195,16 +190,14 @@
     padding-top:2px
 }
 #footer .narrow-right-column .payment .cards {
-    background:url(http://assets.bigrock.in/getImage.php?src=footer-sprite.jpg) no-repeat scroll 0 -155px #d6d6d6;
+    background:url(images/footer-sprite.png) no-repeat scroll 0 -155px #d6d6d6;
     height:32px;
     margin:10px 0
 }
 .border {
-    background:url(http://assets.bigrock.in/getImage.php?src=footer-border.gif) repeat-x scroll 0 bottom transparent;
     padding-bottom:2px
 }
 .section-1 {
-    background:url(http://assets.bigrock.in/getImage.php?src=footer-border.gif) repeat-x scroll 0 bottom transparent;
     padding-bottom:30px
 }
 #footer-wrapper li a {
@@ -219,11 +212,14 @@
     margin-left:0px
 }
 #footer .section-1 .narrow-right-column {
-    background:url(http://assets.bigrock.in/getImage.php?src=footer-gradient.jpg) no-repeat scroll left -724px transparent;
     padding-left:30px;
     width:350px;
     padding-top:0
 }
 #wrapper-bottom {
     color: black;
+}
+
+.help-list{
+    padding:0;
 }
