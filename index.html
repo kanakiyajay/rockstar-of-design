@@ -7,6 +7,7 @@
 	** Licensed under the Apache License v2.0
 	** http://www.apache.org/licenses/LICENSE-2.0
 	** Built by Jay Kanakiya ( @techiejayk )
+	** Built for Rockstar Of Design compeition by bigRock.in
 	-->
     <title>Domain Registration India– Domain Search | Domain Name Registration</title>
     <meta charset="UTF-8" />
@@ -41,7 +42,7 @@
             <div class="col-lg-3">
                 <img class="img-responsive" src="img/BR-logo-color.png" alt="BigRock Logo">
             </div>
-            <div class="col-lg-2 col-lg-offset-2">
+            <div class="col-lg-2 col-lg-offset-1">
             		<ul class="subnav">
             			<li><a href="#">Get a Domain</a></li>
             			<li><a href="#">Get Hosting</a></li>
@@ -70,22 +71,31 @@
             </div>
             <div class="col-lg-2">
                 <ul class="subnav">
-                    <li><a href="#">Cart <span class="badge" ng-show="cartDomains.length">{{cartDomains.length}}</span></a>
+                    <li>
+                    	<a href="#">
+                    		Cart <span class="badge" ng-show="cartDomains.length">{{cartDomains.length}}</span>
+                    	</a>
+                    	<p class="text-info" ng-show="cartDomains.length">&#8377; {{totalCost()}}</p>
                     </li>
                     <li><a href="#">Checkout</a>
                     </li>
                 </ul>
             </div>
+            <!--<div class="col-lg-1" ng-show="cartDomains.length">
+           	<ul class="subnav">
+           		<li ng-repeat="domain in cartDomains">{{domain.text}}</li>
+           	</ul>
+            </div>-->
         </div>
         <div class="row" id="wrapper-search">
             <div class="col-lg-12" id="wrapper-promotion">
-                <h2 id="typo">Get Your Domain Here</h2>
+                <h2 id="typo">Get Your Brand New Domain Here</h2>
             </div>
             <div class="clearfix"></div>
             <div class="col-lg-3 col-xs-1"></div>
             <div class="col-lg-9 col-xs-12">
                 <span class="triangle-left"></span>
-                <input ng-model="searchText" type="text" id="main-searchbar" placeholder="Type your New Domain ..." autofocus="true">
+                <input ng-model="searchText" type="text" id="main-searchbar" placeholder="Type your New Domain ..." autofocus="true" ng-enter="search()">
                 <span id="searchBtn" ng-show="searchText.length" ng-click="search()" class="btn btn-default"><i class="glyphicon glyphicon-search"></i> </span>
             </div>
             <div class="clearfix"></div>
@@ -98,15 +108,16 @@
                    <div class="col-lg-3">
 							<h3>{{domain.text}}</h3>
                    </div>
-                  <div class="col-lg-3 col-lg-offset-2 select-form">
-                   <select class="form-control">
-							<option>&#8377; {{domain.cost}} for 1 year</option>
-							<option>&#8377; {{domain.cost*1.9}} for 3 year</option>
-							<option>&#8377; {{domain.cost*4.6}} for 5 year</option>
+                  <div class="col-lg-5 col-lg-offset-1 select-form">
+                   <select ng-model="cost[$index]" class="form-control">
+							<option value="{{domain.cost}}">&#8377; {{domain.cost}} for 1 year</option>
+							<option value="{{domain.cost*3}}">&#8377; {{domain.cost*3}} for 3 year</option>
+							<option value="{{domain.cost*5}}">&#8377; {{domain.cost*5}} for 5 year</option>
 						</select>
                   </div>
-                 <div class="col-lg-2  col-lg-offset-1">
-                   <button class="btn btn-default btn-add btn-lg" ng-click="addToCart($index)">Add</button>
+                 <div class="col-lg-2">
+                   <button ng-hide="isInCart(domain.text)" class="btn btn-default btn-add btn-lg" ng-click="addToCart($index)">Add</button>
+                   <button ng-show="isInCart(domain.text)" class="btn btn-default btn-add btn-lg" ng-click="removeFromCart(domain.text)">Rem</button>
                  </div>
                  <div class="col-lg-1 triangle">
                   <span class="triangle-right"></span>
@@ -345,10 +356,10 @@
                 <div class="clear"></div>
             </div>
         </div>
-        <div class="row" id="wrapper-">
+        <!--<div class="row" id="wrapper-">
             <p class="text-info">Made by <a href="http://jaykanakiya.com/" title="Home | Jay Kanakiya">Jay Kanakiya</a> for <a href="http://rockstarofdesign.net">Rockstart of Design</a>
             </p>
-        </div>
+        </div>-->
     </div>
     <!--<script type="text/javascript" async>
 			var _gaq = _gaq || [];
@@ -367,5 +378,4 @@
     <script src="js/libs/angular.min.js"></script>
     <script src="js/app.js"></script>
 </body>
-
 </html>
