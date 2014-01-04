@@ -31,9 +31,9 @@
     <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-						<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-						<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-				<![endif]-->
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body ng-controller="RckCtrl">
@@ -59,7 +59,7 @@
             </div>
             <div class="col-lg-2">
                 <ul class="subnav">
-                    <li><a href="#">Call us 1-800-200-7625</a>
+                    <li><a href="tel:18002007625">Call us 1-800-200-7625</a>
                     </li>
                     <li><a href="#">Live Chat</a>
                     </li>
@@ -79,7 +79,7 @@
                 <ul class="subnav">
                     <li>
                         <a href="#">
-                    		Cart <span class="badge" ng-show="cartDomains.length">{{cartDomains.length}}</span>
+                            Cart <span class="badge" ng-show="cartDomains.length">{{cartDomains.length}}</span>
                     	</a>
                         <p class="text-info" ng-show="cartDomains.length">&#8377; {{totalCost()}}</p>
                     </li>
@@ -131,6 +131,7 @@
                             </div>
                         </li>
                     </ul>
+                    <button class="pull-right btn btn-default">Proceed to checkout&nbsp;&nbsp;&#8377; {{totalCost()}}</button>
                 </div>
             </div>
         </div>
@@ -201,7 +202,7 @@
                 </div>
                 <div class="row quote">
                     <blockquote>
-                        I purchased couple of domains and a DIY package from BigRock and it was the best decision I could have ever made. With BigRock's help I was able to customize my business website, having absolutely zero knowledge of programming or designing. Thank you Bigrock!
+                        &quot;I purchased couple of domains and a DIY package from BigRock and it was the best decision I could have ever made. With BigRock's help I was able to customize my business website, having absolutely zero knowledge of programming or designing. Thank you Bigrock!&quot;
                     </blockquote>
                 </div>
             </div>

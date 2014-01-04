@@ -21,4 +21,5 @@
 .quote{
 	margin-left: 20px;
 	padding-top: 20px;
+	border-left: 4px solid lightgray;
 }
