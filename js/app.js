@@ -34,7 +34,9 @@ App.controller("RckCtrl",function  ($scope) {
 	};
 
 	$scope.addToCart = function  (i) {
-		$scope.cartDomains.push($scope.availableDomains[i]);
+		var domain = $scope.availableDomains[i];
+		domain.cost = $scope.cost[i];
+		$scope.cartDomains.push(domain);
 	};
 
 	$scope.totalCost = function  () {
@@ -52,6 +54,13 @@ App.controller("RckCtrl",function  ($scope) {
 				$scope.cartDomains.splice(i,1);
 			}
 		}
+	};
+
+	$scope.changeCost = function  (i,text) {
+		if ($scope.isInCart(text)) {
+			$scope.removeFromCart(text);
+			$scope.addToCart(i);
+		};
 	};
 
 });

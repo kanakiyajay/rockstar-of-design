@@ -1,7 +1,10 @@
 #wrapper-search{
-	background: linear-gradient(135deg, rgb(204, 89, 0) 0%,rgb(247, 117, 14) 50%,rgb(214, 94, 0) 50%,rgb(187, 93, 19) 100%);
 	padding-top: 1em;
 	padding-bottom: 3.5em;
+	background: rgb(247, 117, 14);
+	background: linear-gradient(135deg, rgb(204, 89, 0) 0%,rgb(247, 117, 14) 50%,rgb(214, 94, 0) 50%,rgb(187, 93, 19) 100%);
+	background:-webkit-gradient(linear, 73% 3%, 100% 100%, from(rgb(204, 89, 0)), to(rgb(247, 117, 14)));
+	background:-moz-gradient(linear, 73% 3%, 100% 100%, from(rgb(204, 89, 0)), to(rgb(247, 117, 14)));
 }
 
 .triangle-left{

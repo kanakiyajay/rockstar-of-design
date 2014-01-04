@@ -116,7 +116,7 @@
                                 <h3>{{domain.text}}</h3>
                             </div>
                             <div class="col-lg-5 col-lg-offset-1 select-form">
-                                <select ng-model="cost[$index]" class="form-control">
+                                <select ng-model="cost[$index]" class="form-control" ng-change="changeCost($index,domain.text)">
                                     <option value="{{domain.cost}}">&#8377; {{domain.cost}} for 1 year</option>
                                     <option value="{{domain.cost*3}}">&#8377; {{domain.cost*3}} for 3 year</option>
                                     <option value="{{domain.cost*5}}">&#8377; {{domain.cost*5}} for 5 year</option>
@@ -276,7 +276,7 @@
             </div>
             <div class="col-md-2 col-xs-12">
                 <div class="row text-desc">
-                    <p id="contact-default" class="lead text-white">1-800-200-7625
+                <p id="contact-default" class="lead text-white"><a href="tel:18002007625">1-800-200-7625</a>
                         <br>
                         <span class="small">(Sales: India Toll Free)</span>
                         <br>
