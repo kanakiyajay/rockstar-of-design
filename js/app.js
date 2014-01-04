@@ -9,7 +9,7 @@
 
 var App = angular.module("rockstar",[]);
 
-App.controller("RckCtrl",function  ($scope) {
+App.controller("RckCtrl",["$scope",function  ($scope) {
 
 	/* Will persist via LocalStorage */
 	$scope.cartDomains = [];
@@ -63,7 +63,7 @@ App.controller("RckCtrl",function  ($scope) {
 		};
 	};
 
-});
+}]);
 
 App.directive('ngEnter', function () {
     return function (scope, element, attrs) {
