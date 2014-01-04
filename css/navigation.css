@@ -27,3 +27,22 @@
 	padding-bottom: 5px;
 	text-decoration: none;
 }
+
+@media (max-width: 768px) {
+	#wrapper-logo{
+		margin-bottom: 1em;
+		padding-bottom: 1em;
+		border-bottom: 2px solid black;
+	}
+	.subnav li{
+		margin-top: 10px;
+	}
+	.subnav a{
+		display: block;
+		width: 100%;
+		font-size: 1em;
+	}
+	.subnav li:hover a{
+		font-size: 1em;
+	}
+}

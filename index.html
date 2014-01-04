@@ -40,10 +40,10 @@
     <div class="container-fluid">
         <div class="row" id="wrapper-navigation">
             <div class="col-lg-1"></div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-xs-12" id="wrapper-logo">
                 <img class="img-responsive" src="img/BR-logo-color.png" alt="BigRock Logo">
             </div>
-            <div class="col-lg-2 col-lg-offset-1">
+            <div class="col-lg-2 col-lg-offset-1 col-xs-12">
                 <ul class="subnav">
                     <li><a href="#">Get a Domain</a>
                     </li>
@@ -98,7 +98,7 @@
                 <h2 id="typo">Get Your Brand New Domain Here</h2>
             </div>
             <div class="clearfix"></div>
-            <div class="col-lg-3 col-xs-1"></div>
+            <div class="col-lg-3 hidden-xs"></div>
             <div class="col-lg-9 col-xs-12">
                 <span class="triangle-left"></span>
                 <input ng-model="searchText" type="text" id="main-searchbar" placeholder="Type your New Domain ..." autofocus="true" ng-enter="search()">
@@ -135,8 +135,8 @@
             </div>
         </div>
         <div class="row" id="wrapper-pricelist">
-            <div class="col-lg-1"></div>
-            <div class="col-lg-2">
+            <div class="col-lg-1 hidden-xs"></div>
+            <div class="col-lg-2 col-xs-6">
                 <div class="triangle-up">
                     <div></div>
                 </div>
@@ -146,7 +146,7 @@
                         <del>&#8377; 350</del>&#8377; 299</div>
                 </div>
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-xs-6">
                 <div class="triangle-up">
                     <div></div>
                 </div>
@@ -155,7 +155,7 @@
                     <div class="domain-rate">&#8377; 639</div>
                 </div>
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-xs-6">
                 <div class="triangle-up">
                     <div></div>
                 </div>
@@ -164,7 +164,7 @@
                     <div class="domain-rate">&#8377; 339</div>
                 </div>
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-xs-6">
                 <div class="triangle-up">
                     <div></div>
                 </div>
@@ -173,7 +173,7 @@
                     <div class="domain-rate">&#8377; 199</div>
                 </div>
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-xs-6">
                 <div class="triangle-up">
                     <div></div>
                 </div>
@@ -209,10 +209,10 @@
         <div class="row footer" id="footer-wrapper">
         <div class="col-md-2"></div>
         <div class="col-md-8">
-        	<div class="row"><p class="text-white">Welcome to BigRock: An Award-Winning, ICANN-Accredited Domain Name Registrar</p>
+        	<div class="row text-desc"><p class="text-white">Welcome to BigRock: An Award-Winning, ICANN-Accredited Domain Name Registrar</p>
         	<p>At BigRock, our mission is to offer world class Domain Registration & Web Hosting products to our customers. Leveraging years of expertise and cutting-edge technology, we offer a comprehensive suite of Domain Name and Web Hosting services such as domain name registration, Email hosting, VPS hosting and more. In addition, to helping you make the most of the web, we also offer various value-added services such as WHOIS lookup , DNS management & Premium Domain sales.</p></div>
 
-<div class="row"><p class="text-white">Need Help?</p>
+<div class="row text-desc"><p class="text-white">Need Help?</p>
 <p>For detailed information on our domain name & Web hosting services, please call us at 1-800-200-7625/022 30797900 or click on the 'Live Chat' button at the top.</p></div>
         </div>
        </div>
@@ -274,8 +274,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-2">
-                <div class="row">
+            <div class="col-md-2 col-xs-12">
+                <div class="row text-desc">
                     <p id="contact-default" class="lead text-white">1-800-200-7625
                         <br>
                         <span class="small">(Sales: India Toll Free)</span>
@@ -299,16 +299,16 @@
     <script src="js/libs/angular.min.js"></script>
     <script src="js/app.js"></script>
     <script type="text/javascript" async>
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-33060097-3']);
-			_gaq.push(['_setDomainName', 'jaykanakiya.com']);
-			_gaq.push(['_trackPageview']);
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-33060097-3']);
+        _gaq.push(['_setDomainName', 'jaykanakiya.com']);
+        _gaq.push(['_trackPageview']);
 
-			(function() {
-					var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-					ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
+        (function() {
+        		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
     </script>
 </body>
 </html>
