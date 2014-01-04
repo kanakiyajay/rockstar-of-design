@@ -2,6 +2,11 @@
 .container-fluid{
 	padding: 0 15px;
 }
+
+.modal-dialog {
+  width:900px;
+}
+
 ::-webkit-scrollbar {
   -webkit-appearance:none;
   width:4px;

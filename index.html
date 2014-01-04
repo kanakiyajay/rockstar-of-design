@@ -83,7 +83,7 @@
                     	</a>
                         <p class="text-info" ng-show="cartDomains.length">&#8377; {{totalCost()}}</p>
                     </li>
-                    <li><a href="#">Checkout</a>
+                    <li><a href="#" data-toggle="modal" data-target="#myModal">Checkout</a>
                     </li>
                 </ul>
             </div>
@@ -131,7 +131,7 @@
                             </div>
                         </li>
                     </ul>
-                    <button class="pull-right btn btn-default">Proceed to checkout&nbsp;&nbsp;&#8377; {{totalCost()}}</button>
+                    <button ng-show="cartDomains.length" class="pull-right btn btn-default" data-toggle="modal" data-target="#myModal">Proceed to checkout&nbsp;&nbsp;&#8377; {{totalCost()}}</button>
                 </div>
             </div>
         </div>
@@ -295,6 +295,111 @@
             </p>
         </div>-->
     </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Login or Create a new Account to Checkout</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+                <div class="col-lg-6 col-xs-12">
+                <!-- Will Show the Information of person if Logged in-->
+                <form class="form-horizontal sinup-form">
+                    <fieldset>
+                    <div class="form-group">
+                      <label class="col-md-2 control-label" for="name">Name</label>
+                      <div class="col-md-10">
+                      <input id="name" name="name" type="text" placeholder="Enter your Full Name." class="form-control" required="">
+
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-md-2 control-label" for="email">Email</label>
+                      <div class="col-md-10">
+                      <input id="email" name="email" type="text" placeholder="Enter your email address.." class="form-control input-md" required="">
+                      <span class="help-block">Will be used as your username.</span>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-md-2 control-label" for="passwordinput">Password</label>
+                      <div class="col-md-10">
+                        <input id="passwordinput" name="passwordinput" type="password" placeholder="Enter your password" class="form-control input-md" required="">
+                        <span class="help-block">8 character minimum. No special characters.</span>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-md-2 control-label" for="cpasswordinput">Confirm Password</label>
+                      <div class="col-md-10">
+                        <input id="cpasswordinput" name="cpasswordinput" type="password" placeholder="Confirm password" class="form-control input-md" required="">
+                        <span class="help-block">8 character minimum. No special characters.</span>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-md-2 control-label" for="address">Address</label>
+                      <div class="col-md-10">
+                        <textarea class="form-control" id="address" name="address" rows="3"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-md-2 control-label" for="city">City</label>
+                      <div class="col-md-10">
+                      <input id="city" name="city" type="text" placeholder="Where you live" class="form-control input-md" required="">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-md-2 control-label" for="phone">Phone Number</label>
+                      <div class="col-md-10">
+                      <input id="phone" name="phone" type="text" placeholder="" class="form-control input-md" required="">
+                      <span class="help-block">Country Code + Phone Number</span>
+                      </div>
+                    </div>
+                    </fieldset>
+                    <br>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox">
+                    <span class="small">By clicking 'Create Account' you agree to Bigrock's <a href="/support/legal.php" target="_blank">Terms &amp; Conditions</a>.</span>
+                      </label>
+                    </div>
+                    <br>
+                    <div class="form-actions">
+                      <button type="submit" class="btn btn-danger">Create Account</button>
+                      <br>
+                    </div>
+                    <hr>
+                    </form>
+                </div>
+                <div class="col-lg-6 col-xs-12">
+                    <h4>Your order</h4>
+                    <hr>
+                    <ul class="list-group">
+                        <li class="list-group-item" ng-repeat="domain in cartDomains">
+                            <strong>{{domain.text}}</strong>
+                            <button type="button" class="close pull-right" ng-click="removeFromCart(domain.text)" aria-hidden="true">&times;</button>
+                            <span class="badge">&#8377; {{domain.cost}}</span>
+                        </li>
+                    </ul>
+                    <h2 ng-hide="cartDomains.length">
+                        Please add Domains
+                    </h2>
+                    <hr>
+                    <h4>Total = &#8377; {{totalCost()}}</h4>
+                    <div class="row pull-right" style="margin-top:25px;margin-right:20px;">
+                        <button type="button" class="btn btn-primary">Process to Payment</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Process to Payment</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
     <script src="js/libs/jquery.min.js"></script>
     <script src="js/libs/bootstrap.min.js"></script>
     <script src="js/libs/angular.min.js"></script>

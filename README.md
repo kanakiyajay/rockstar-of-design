@@ -1,8 +1,9 @@
-#Rockstar of Design is a web design contest by BigRock.#
+##Rockstar of Design is a web design contest by BigRock
+
 
 This is my entry to the competition.
 It is an elegant design made using powerful features of html5 and css3 made using flat UI and awesome transitions.
-![A Demo is available on my website](http://jaykanakiya.com/demos/rockstar)
+[A Demo is available on my website](http://jaykanakiya.com/demos/rockstar/)
 
 ## Features
 
