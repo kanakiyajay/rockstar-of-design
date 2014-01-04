@@ -5,6 +5,8 @@ This is my entry to the competition.
 It is an elegant design made using powerful features of html5 and css3 made using flat UI and awesome transitions.
 [A Demo is available on my website](http://jaykanakiya.com/demos/rockstar/)
 
+The main feature is the Single Page Angular-js App built for adding domains to cart and check-out without leaving a screen.
+
 ## Features
 
 1. Html5 responsive website
@@ -17,13 +19,19 @@ It is an elegant design made using powerful features of html5 and css3 made usin
 1. Proper Usage of heading tags.
 1. Uses pure Css traingles no javascript or images.
 1. Uses autofocus on the input search.
-1.No back-end just a single-page Angular-js App.
+1. No back-end just a single-page Angular-js App.
 
 ## Libraries Used
 
 1. JQuery
 1. Twitter Bootstrao
 1. Angular-js
+
+#Contact
+
+[Twitter](http://twitter.com/techiejayk)
+[Website](http://jaykanakiya.com/)
+[Email](mailto:kanakiyajay@gmail.com)
 
 #LICENSE
 
