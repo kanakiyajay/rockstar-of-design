@@ -12,6 +12,14 @@
 	border-color: transparent white transparent transparent;
 }
 
+.triangle-right{
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-color: transparent transparent transparent white ;
+	border-width: 22px 0 18px 42.8px;
+}
+
 #typo{
 	font-family: 'Oswald', sans-serif;
 	color: white;
@@ -38,4 +46,44 @@
 
 #main-searchbar:focus{
 	outline: none;
+}
+
+/* Domain-List */
+
+#availableDomains {
+	margin-left: 40px;
+	margin-top: 15px;
+}
+
+.domains{
+	list-style-type: none;
+}
+
+.domains .form-control {
+	width: 100px;
+	font-size: 1.25em;
+}
+
+.domains .triangle{
+	margin-top: 20px;
+	-webkit-transform : translateX(29px);
+	-moz-transform : translateX(29px);
+	transform : translateX(29px);
+}
+
+.domains .row{
+	margin:0.9em 0;
+	background-color: white;
+}
+
+.select-form{
+	margin-top: 10px;
+}
+
+.btn-add{
+	margin-top: 4px;
+	border: 0;
+	-webkit-transform : translateX(50px);
+	-moz-transform : translateX(50px);
+	transform : translateX(50px);
 }

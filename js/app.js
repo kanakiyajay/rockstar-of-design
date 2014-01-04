@@ -19,7 +19,7 @@ App.controller("RckCtrl",function  ($scope) {
 	$scope.search = function  () {
 		var dText = $scope.searchText;
 		$scope.availableDomains = [];
-		$scope.availableDomains.splice(0,0,dText+".net",dText+".in",dText+".com",dText+".org");
+		$scope.availableDomains.splice(0,0,{text : dText+".net" , cost : 299 },{text : dText+".com" , cost : 639 },{text : dText+".org" , cost : 339 },{text : dText+".biz" , cost : 229 });
 	};
 
 	$scope.addToCart = function  (i) {
