@@ -19,6 +19,7 @@ The main feature is the Single Page Angular-js App built for adding domains to c
 1. Uses pure Css triangles and uses no javascript or images.
 1. Uses autofocus on the input search.
 1. No back-end just a single-page Angular-js App.
+1. 97% PageSpeed http://gtmetrix.com/reports/jaykanakiya.com/5hYVyPf6
 
 ## Libraries Used
 
